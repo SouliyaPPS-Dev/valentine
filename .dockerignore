@@ -40,7 +40,6 @@ next-env.d.ts
 
 # railway (will use own config)
 railway.json
-Procfile
 
 # docker
 Dockerfile
