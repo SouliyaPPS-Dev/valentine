@@ -1,21 +1,43 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 
 export function FloatingElements() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Generate hearts with random positions
   const hearts = Array.from({ length: 15 }, (_, i) => ({
     id: i,
     delay: i * 0.5,
     duration: 8 + Math.random() * 4,
-    x: Math.random() * 100,
+    x: (i * 7 + 5) % 100, // Use deterministic positions instead of random
   }));
 
+  // Generate sparkles with random positions
   const sparkles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
     delay: i * 0.3,
     duration: 6 + Math.random() * 3,
-    x: Math.random() * 100,
+    x: (i * 5 + 10) % 100, // Use deterministic positions instead of random
   }));
+
+  // Don't render animated elements until mounted to prevent hydration mismatch
+  if (!isMounted) {
+    return (
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Film grain overlay */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')] opacity-30 mix-blend-overlay" />
+
+        {/* Soft vignette */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-pink-300/30" />
+      </div>
+    );
+  }
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
