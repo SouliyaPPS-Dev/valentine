@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import { ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
-import { FloatingElements } from '@/components/FloatingElements';
-import { VintageDecorations } from '@/components/VintageDecorations';
+import { motion } from "motion/react";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import { FloatingElements } from "@/components/FloatingElements";
+import { VintageDecorations } from "@/components/VintageDecorations";
 
 export function LoveLetter() {
   return (
@@ -26,7 +26,7 @@ export function LoveLetter() {
           <motion.div
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, type: 'spring' }}
+            transition={{ delay: 0.2, type: "spring" }}
             className="text-center mb-6 md:mb-8"
           >
             <motion.div
@@ -36,7 +36,7 @@ export function LoveLetter() {
               }}
               transition={{
                 duration: 2,
-                ease: 'easeInOut',
+                ease: "easeInOut",
                 repeat: Infinity,
               }}
             >
@@ -63,8 +63,8 @@ export function LoveLetter() {
               className="absolute inset-0 opacity-30"
               style={{
                 backgroundImage: `url('https://images.unsplash.com/photo-1637135100511-bc1c180d9b38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwbmV3c3BhcGVyJTIwdGV4dHVyZSUyMG9sZCUyMHBhcGVyfGVufDF8fHx8MTc3MDE1MTQwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
 
@@ -72,8 +72,10 @@ export function LoveLetter() {
             <div className="absolute inset-0 bg-gradient-to-br from-pink-50/95 via-rose-50/95 to-pink-50/95" />
 
             {/* Decorative lace border effect */}
-            <div className="absolute inset-0 pointer-events-none" style={{
-              background: `
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: `
                 repeating-linear-gradient(
                   90deg,
                   rgba(255, 182, 193, 0.1) 0px,
@@ -86,14 +88,15 @@ export function LoveLetter() {
                   transparent 2px,
                   transparent 30px
                 )
-              `
-            }} />
+              `,
+              }}
+            />
 
             {/* Corner rose decorations */}
             <motion.div
               initial={{ scale: 0, rotate: -45 }}
               animate={{ scale: 1, rotate: -25 }}
-              transition={{ delay: 0.8, type: 'spring' }}
+              transition={{ delay: 0.8, type: "spring" }}
               className="absolute top-4 left-4 w-16 h-16 md:w-20 md:h-20 z-10"
             >
               <img
@@ -105,7 +108,7 @@ export function LoveLetter() {
             <motion.div
               initial={{ scale: 0, rotate: 45 }}
               animate={{ scale: 1, rotate: 25 }}
-              transition={{ delay: 0.9, type: 'spring' }}
+              transition={{ delay: 0.9, type: "spring" }}
               className="absolute top-4 right-4 w-16 h-16 md:w-20 md:h-20 z-10"
             >
               <img
@@ -117,7 +120,7 @@ export function LoveLetter() {
             <motion.div
               initial={{ scale: 0, rotate: 25 }}
               animate={{ scale: 1, rotate: 15 }}
-              transition={{ delay: 1, type: 'spring' }}
+              transition={{ delay: 1, type: "spring" }}
               className="absolute bottom-4 left-4 w-16 h-16 md:w-20 md:h-20 z-10"
             >
               <img
@@ -129,7 +132,7 @@ export function LoveLetter() {
             <motion.div
               initial={{ scale: 0, rotate: -25 }}
               animate={{ scale: 1, rotate: -15 }}
-              transition={{ delay: 1.1, type: 'spring' }}
+              transition={{ delay: 1.1, type: "spring" }}
               className="absolute bottom-4 right-4 w-16 h-16 md:w-20 md:h-20 z-10"
             >
               <img
@@ -143,7 +146,7 @@ export function LoveLetter() {
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
-              transition={{ delay: 0.8, type: 'spring' }}
+              transition={{ delay: 0.8, type: "spring" }}
               className="absolute -top-6 md:-top-8 right-8 md:right-12 z-20"
             >
               <img
@@ -162,39 +165,64 @@ export function LoveLetter() {
             >
               {/* Header */}
               <div className="text-right mb-6 md:mb-8">
-                <p className="text-rose-500/70 italic text-sm md:text-base">February 3, 2026</p>
-                <p className="text-rose-500/70 italic text-sm md:text-base">With all my love...</p>
+                <p className="text-rose-500/70 italic text-sm md:text-base">
+                  February 3, 2026
+                </p>
+                <p className="text-rose-500/70 italic text-sm md:text-base">
+                  With all my love...
+                </p>
               </div>
 
               {/* Salutation */}
               <p className="font-cursive text-3xl md:text-4xl lg:text-5xl text-rose-600 mb-4 md:mb-6">
-                My Dearest Theodore,
+                My Dearest Love,
               </p>
 
               {/* Letter body */}
               <div className="space-y-3 md:space-y-4 text-base md:text-lg text-rose-800 leading-relaxed">
                 <p>
-                  As I sit here writing this, my heart is so full it feels like it might burst. There are moments in life when words feel inadequate, when the depth of feeling cannot be captured by letters on a page. Yet I try, because you deserve to know just how deeply you are loved.
+                  As I sit here writing this, my heart is so full it feels like
+                  it might burst. There are moments in life when words feel
+                  inadequate, when the depth of feeling cannot be captured by
+                  letters on a page. Yet I try, because you deserve to know just
+                  how deeply you are loved.
                 </p>
 
                 <p>
-                  You are the warmth in my mornings and the peace in my nights. You are the unexpected joy in ordinary moments and the steady comfort in uncertain times. When I'm with you, the world feels softer, kinder, more beautiful — as if everything has been touched by the same magic that brought us together.
+                  You are the warmth in my mornings and the peace in my nights.
+                  You are the unexpected joy in ordinary moments and the steady
+                  comfort in uncertain times. When I'm with you, the world feels
+                  softer, kinder, more beautiful — as if everything has been
+                  touched by the same magic that brought us together.
                 </p>
 
                 <p>
-                  I love the way you make me laugh until my cheeks hurt. I love how you understand my silences as much as my words. I love your gentle strength, your kind heart, and the way you see beauty in places others might overlook. I love how you make me want to be better, not because you ask it of me, but because your love inspires me to grow.
+                  I love the way you make me laugh until my cheeks hurt. I love
+                  how you understand my silences as much as my words. I love
+                  your gentle strength, your kind heart, and the way you see
+                  beauty in places others might overlook. I love how you make me
+                  want to be better, not because you ask it of me, but because
+                  your love inspires me to grow.
                 </p>
 
                 <p>
-                  Theodore, you are not just someone I love — you are home. You are the answer to questions I didn't know I was asking. You are every sweet dream I've ever had, come to life in the most wonderful way.
+                  My love, you are not just someone I cherish — you are home.
+                  You are the answer to questions I didn't know I was asking.
+                  You are every sweet dream I've ever had, come to life in the
+                  most wonderful way.
                 </p>
 
                 <p>
-                  This Valentine's Day, and every day that follows, I choose you. I choose us. I choose this beautiful, messy, perfect adventure we're on together. Thank you for being you. Thank you for loving me. Thank you for existing in this world at the exact same time as me.
+                  This Valentine's Day, and every day that follows, I choose
+                  you. I choose us. I choose this beautiful, messy, perfect
+                  adventure we're on together. Thank you for being you. Thank
+                  you for loving me. Thank you for existing in this world at the
+                  exact same time as me.
                 </p>
 
                 <p className="pt-3 md:pt-4 italic font-medium">
-                  You are my greatest blessing, my sweetest treasure, my forever love.
+                  You are my greatest blessing, my sweetest treasure, my forever
+                  love.
                 </p>
               </div>
 

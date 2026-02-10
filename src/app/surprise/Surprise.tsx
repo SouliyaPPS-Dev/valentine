@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import Link from 'next/link';
-import { FloatingElements } from '@/components/FloatingElements';
-import { VintageDecorations } from '@/components/VintageDecorations';
+import { motion } from "motion/react";
+import Link from "next/link";
+import { FloatingElements } from "@/components/FloatingElements";
+import { VintageDecorations } from "@/components/VintageDecorations";
 
 export function Surprise() {
   return (
@@ -34,13 +34,15 @@ export function Surprise() {
               A Special Promise
             </h2>
             <p className="text-2xl text-rose-700 mb-8 leading-relaxed">
-              This Valentine's Day, I promise you a thousand more moments like this...
+              This Valentine's Day, I promise you a thousand more moments like
+              this...
             </p>
             <div className="bg-white/60 rounded-2xl p-8 mb-8">
               <p className="text-lg text-rose-800 italic leading-relaxed">
-                "I promise to hold your hand through every season, to laugh with you until we cry,
-                to dance with you in the kitchen, to choose you every single day, and to love you
-                more deeply with each passing moment. You are my greatest gift, Theodore."
+                "I promise to hold your hand through every season, to laugh with
+                you until we cry, to dance with you in the kitchen, to choose
+                you every single day, and to love you more deeply with each
+                passing moment. You are my greatest gift, my love."
               </p>
               <p className="text-right mt-4 text-rose-600 font-cursive text-2xl">
                 — Forever yours, Chérie

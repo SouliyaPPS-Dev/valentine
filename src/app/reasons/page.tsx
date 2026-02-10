@@ -1,9 +1,10 @@
-import { Metadata } from 'next';
-import { Reasons } from './Reasons';
+import { Metadata } from "next";
+import { Reasons } from "./Reasons";
 
 export const metadata: Metadata = {
-  title: "Reasons I Love You | Theodore",
-  description: "Just a few of the infinite reasons why Chérie loves Theodore.",
+  title: "Reasons I Love You",
+  description:
+    "Just a few of the infinite reasons why Chérie loves her beloved.",
   openGraph: {
     title: "Reasons I Love You",
     description: "Just a few of infinite reasons.",

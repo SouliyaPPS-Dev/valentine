@@ -13,13 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Valentine's Gift for Theodore | A Special Surprise",
+  title: "Valentine's Gift for You | A Special Surprise",
   description:
-    "A special Valentine's Day surprise from Chérie to Theodore. Explore love letters, precious moments, and heartfelt gifts crafted with love.",
+    "A special Valentine's Day surprise from Chérie to her beloved. Explore love letters, precious moments, and heartfelt gifts crafted with love.",
   keywords: ["Valentine's Day", "love letter", "gift", "surprise", "romantic"],
   openGraph: {
-    title: "Valentine's Gift for Theodore | A Special Surprise",
-    description: "A special Valentine's Day surprise from Chérie to Theodore.",
+    title: "Valentine's Gift for You | A Special Surprise",
+    description:
+      "A special Valentine's Day surprise from Chérie to her beloved.",
     type: "website",
     images: [
       {
@@ -32,8 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valentine's Gift for Theodore | A Special Surprise",
-    description: "A special Valentine's Day surprise from Chérie to Theodore.",
+    title: "Valentine's Gift for You | A Special Surprise",
+    description:
+      "A special Valentine's Day surprise from Chérie to her beloved.",
     images: ["/heart.png"],
   },
   icons: {

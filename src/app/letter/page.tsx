@@ -1,11 +1,12 @@
-import { Metadata } from 'next';
-import { LoveLetter } from './LoveLetter';
+import { Metadata } from "next";
+import { LoveLetter } from "./LoveLetter";
 
 export const metadata: Metadata = {
-  title: "A Love Letter for Theodore | Valentine's Day",
-  description: "Words from my heart to yours. A special love letter from Chérie to Theodore.",
+  title: "A Love Letter for You | Valentine's Day",
+  description:
+    "Words from my heart to yours. A special love letter from Chérie to her beloved.",
   openGraph: {
-    title: "A Love Letter for Theodore",
+    title: "A Love Letter for You",
     description: "Words from my heart to yours.",
   },
 };

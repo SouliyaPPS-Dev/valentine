@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import { ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
-import { FloatingElements } from '@/components/FloatingElements';
-import { VintageDecorations } from '@/components/VintageDecorations';
+import { motion } from "motion/react";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import { FloatingElements } from "@/components/FloatingElements";
+import { VintageDecorations } from "@/components/VintageDecorations";
 
 export function BubuMoment() {
   return (
@@ -51,7 +51,9 @@ export function BubuMoment() {
             <div className="relative h-96 md:h-[500px] overflow-hidden bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center">
               <div className="text-center">
                 <div className="text-8xl mb-4">🧸🧸</div>
-                <p className="text-rose-600 font-cursive text-2xl">Our Cozy Photo Here</p>
+                <p className="text-rose-600 font-cursive text-2xl">
+                  Our Cozy Photo Here
+                </p>
               </div>
               {/* Soft overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-rose-100/80 via-transparent to-transparent" />
@@ -65,7 +67,7 @@ export function BubuMoment() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: 'easeInOut',
+                  ease: "easeInOut",
                 }}
                 className="absolute top-10 left-10 text-6xl"
               >
@@ -79,7 +81,7 @@ export function BubuMoment() {
                 transition={{
                   duration: 2.5,
                   repeat: Infinity,
-                  ease: 'easeInOut',
+                  ease: "easeInOut",
                   delay: 0.5,
                 }}
                 className="absolute top-20 right-16 text-5xl"
@@ -94,7 +96,7 @@ export function BubuMoment() {
                 transition={{
                   duration: 3.5,
                   repeat: Infinity,
-                  ease: 'easeInOut',
+                  ease: "easeInOut",
                   delay: 1,
                 }}
                 className="absolute bottom-32 left-1/3 text-5xl"
@@ -141,7 +143,7 @@ export function BubuMoment() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1, type: 'spring' }}
+                  transition={{ delay: 1, type: "spring" }}
                   className="pt-6"
                 >
                   <div className="inline-block bg-gradient-to-r from-rose-100 to-pink-100 rounded-2xl px-8 py-6 shadow-lg">
@@ -151,9 +153,7 @@ export function BubuMoment() {
                     <p className="font-cursive text-3xl text-rose-600">
                       Complete. Safe. Home.
                     </p>
-                    <div className="mt-4 text-4xl">
-                      🧸💕🧸
-                    </div>
+                    <div className="mt-4 text-4xl">🧸💕🧸</div>
                   </div>
                 </motion.div>
 
@@ -163,7 +163,7 @@ export function BubuMoment() {
                   transition={{ delay: 1.2 }}
                   className="text-rose-500 italic pt-4"
                 >
-                  You're my Bubu, Theodore. Always and forever. 💕
+                  You're my Bubu, my love. Always and forever. 💕
                 </motion.p>
               </div>
             </div>

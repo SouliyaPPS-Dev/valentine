@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import Link from 'next/link';
-import { FloatingElements } from '@/components/FloatingElements';
-import { VintageDecorations } from '@/components/VintageDecorations';
+import { motion } from "motion/react";
+import Link from "next/link";
+import { FloatingElements } from "@/components/FloatingElements";
+import { VintageDecorations } from "@/components/VintageDecorations";
 
 export function Reasons() {
   return (
@@ -28,27 +28,38 @@ export function Reasons() {
           <div className="space-y-4 text-lg text-rose-800 leading-relaxed">
             <p className="flex items-start gap-3">
               <span className="text-2xl">💕</span>
-              <span>Your smile lights up my entire world, Theodore</span>
+              <span>Your smile lights up my entire world, my love</span>
             </p>
             <p className="flex items-start gap-3">
               <span className="text-2xl">✨</span>
-              <span>The way you make me feel safe and cherished every single day</span>
+              <span>
+                The way you make me feel safe and cherished every single day
+              </span>
             </p>
             <p className="flex items-start gap-3">
               <span className="text-2xl">🌹</span>
-              <span>Your kindness and the gentle way you care for everything around you</span>
+              <span>
+                Your kindness and the gentle way you care for everything around
+                you
+              </span>
             </p>
             <p className="flex items-start gap-3">
               <span className="text-2xl">💖</span>
-              <span>How you understand me without words, like our hearts speak the same language</span>
+              <span>
+                How you understand me without words, like our hearts speak the
+                same language
+              </span>
             </p>
             <p className="flex items-start gap-3">
               <span className="text-2xl">🦋</span>
-              <span>The beautiful future I see when I close my eyes and dream with you</span>
+              <span>
+                The beautiful future I see when I close my eyes and dream with
+                you
+              </span>
             </p>
             <p className="flex items-start gap-3">
               <span className="text-2xl">🌟</span>
-              <span>Simply being you — my Theodore, my everything, my forever</span>
+              <span>Simply being you — my everything, my forever</span>
             </p>
           </div>
           <motion.div
