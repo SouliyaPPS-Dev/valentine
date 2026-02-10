@@ -2,8 +2,14 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
+import { Noto_Sans_Lao } from "next/font/google";
 import { FloatingElements } from "@/components/FloatingElements";
 import { VintageDecorations } from "@/components/VintageDecorations";
+
+const notoSansLao = Noto_Sans_Lao({
+  subsets: ["lao"],
+  weight: ["400", "700"],
+});
 
 export function GiftRoom() {
   return (
@@ -34,7 +40,7 @@ export function GiftRoom() {
           >
             <div className="mb-4 rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXQlMjB3aXRoJTIwZmxvd2VycyUyMHZhbGVudGluZXxlbnwxfHx8fDE3NzAxNjU4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/cat.jpeg"
                 alt="Beautiful cat with flowers"
                 className="w-full h-auto max-h-[32rem] object-contain bg-gradient-to-br from-rose-50 via-pink-100 to-rose-200"
               />
@@ -51,12 +57,15 @@ export function GiftRoom() {
               >
                 🐱💐
               </motion.div>
-              <p className="font-cursive text-3xl text-rose-600 mb-3">
-                A Little Cutie for You
+              <p
+                className={`${notoSansLao.className} text-3xl text-rose-600 mb-3`}
+              >
+                ເຢ້........ ຂ້ອຍມີແຟນແລ້ວ
               </p>
-              <p className="text-rose-500/80 text-lg italic">
-                Like this adorable kitty, I'm offering you my heart with a
-                bouquet of love... 💕
+              <p
+                className={`${notoSansLao.className} text-rose-600/80 text-lg italic`}
+              >
+                ແຕ່ງໂຕງາມໆຖ້າເດີ້ ດຽວມື້ແລງອ້າຍຮັບໄປກິນເຂົ້າ... 💕
               </p>
             </div>
           </motion.div>

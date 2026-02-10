@@ -21,6 +21,20 @@ export const metadata: Metadata = {
     title: "Valentine's Gift for Theodore | A Special Surprise",
     description: "A special Valentine's Day surprise from Chérie to Theodore.",
     type: "website",
+    images: [
+      {
+        url: "/heart.png",
+        width: 1024,
+        height: 1024,
+        alt: "Heart logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valentine's Gift for Theodore | A Special Surprise",
+    description: "A special Valentine's Day surprise from Chérie to Theodore.",
+    images: ["/heart.png"],
   },
   icons: {
     icon: "/heart.png",
